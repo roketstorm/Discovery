@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://HUD.gd" type="Script" id=1]
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonUp" type="Button" parent="."]
+margin_left = 320.892
+margin_top = 910.55
+margin_right = 413.892
+margin_bottom = 1006.55
+text = "UP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonDown" type="Button" parent="."]
+margin_left = 319.089
+margin_top = 1140.66
+margin_right = 412.089
+margin_bottom = 1236.66
+text = "DOWN"
+
+[node name="ButtonLeft" type="Button" parent="."]
+margin_left = 66.5243
+margin_top = 1025.58
+margin_right = 159.524
+margin_bottom = 1121.58
+text = "LEFT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonRight" type="Button" parent="."]
+margin_left = 581.324
+margin_top = 1013.79
+margin_right = 674.324
+margin_bottom = 1109.79
+text = "RIGHT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="toggled" from="ButtonUp" to="." method="_on_ButtonUp_toggled"]

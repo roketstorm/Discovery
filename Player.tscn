@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+
+[node name="Player" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1, 0 )
+shape = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+
+[node name="HUD" type="Control" parent="Camera"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonUp" type="Button" parent="Camera/HUD"]
+margin_left = 303.047
+margin_top = 944.623
+margin_right = 396.047
+margin_bottom = 1040.62
+text = "UP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonDown" type="Button" parent="Camera/HUD"]
+margin_left = 303.047
+margin_top = 1138.29
+margin_right = 396.047
+margin_bottom = 1234.29
+text = "DOWN"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonLeft" type="Button" parent="Camera/HUD"]
+margin_left = 106.209
+margin_top = 1041.45
+margin_right = 199.209
+margin_bottom = 1137.45
+text = "LEFT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonRight" type="Button" parent="Camera/HUD"]
+margin_left = 496.71
+margin_top = 1036.69
+margin_right = 589.71
+margin_bottom = 1132.69
+text = "RIGHT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="toggled" from="Camera/HUD/ButtonUp" to="." method="_on_ButtonUp_toggled"]

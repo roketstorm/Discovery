@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://DemoObject.tscn" type="PackedScene" id=2]
+
+[node name="Level" type="Spatial"]
+
+[node name="KinematicBody2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.88018, 0.0473356, -3.38323 )
+
+[node name="KinematicBody" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9398, 0.254799, -1.97073 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0017612, -0.00619411, 0.00805473 )
