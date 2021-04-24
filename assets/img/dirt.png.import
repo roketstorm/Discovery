@@ -4,15 +4,16 @@ importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.s3tc.stex"
 path.etc="res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.etc.stex"
+path.pvrtc="res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.pvrtc.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc" ],
+"imported_formats": [ "s3tc", "etc", "pvrtc" ],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/img/dirt.png"
-dest_files=[ "res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.s3tc.stex", "res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.etc.stex" ]
+dest_files=[ "res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.s3tc.stex", "res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.etc.stex", "res://.import/dirt.png-284ce7d75ceaaca59e70a0b9aafd5167.pvrtc.stex" ]
 
 [params]
 
