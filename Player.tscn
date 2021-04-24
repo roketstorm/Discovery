@@ -14,6 +14,7 @@ shape = SubResource( 1 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+fov = 75.0
 
 [node name="HUD" type="Control" parent="Camera"]
 margin_right = 40.0
@@ -61,5 +62,10 @@ text = "RIGHT"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="SpotLight" type="SpotLight" parent="Camera"]
+spot_range = 7.04115
+spot_attenuation = 0.241484
+spot_angle = 40.0
 
 [connection signal="toggled" from="Camera/HUD/ButtonUp" to="." method="_on_ButtonUp_toggled"]
